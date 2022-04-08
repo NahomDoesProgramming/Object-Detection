@@ -3,7 +3,7 @@ stats = "";
 objects = [];
 function preload()
 {
-    img = loadImage("fruit.jpeg");
+    img = loadImage("house.jpeg");
 }
 function setup()
 {
@@ -39,7 +39,7 @@ function draw()
             fill("orange");
             percent = floor(objects[i].confidence * 100);
             text(objects[i].label + " " + percent + "%", objects[i].x + 15, objects[i].y + 15);
-            noFill();
+            noFill();``
             stroke("orange");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
         }
